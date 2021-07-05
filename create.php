@@ -30,7 +30,7 @@
                         <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"></textarea>
                     </div>
                     <div class="d-flex justify-content-end">
-                    <div class="my-parts">POST</div>
+                    <button type="submit" class="my-parts">POST</button>
                     </div>
                 </form>
             </div>
