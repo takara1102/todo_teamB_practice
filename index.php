@@ -1,7 +1,17 @@
 <?php
+// タスクの一覧表示機能
+// ファイルの読み込み
+
+
+// データの取得
+require_once('Models/Task.php');
+require_once('function.php');
+
+$task = new Task();
+$tasks = $task->getAll();
+// var_dump($tasks);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +28,7 @@
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-dark bg-dark">
-                    <a href="index.php" class="navbar-brand">Todo_teamB_practice</a>
+                    <a href="index.php" class="navbar-brand">Todo_practice</a>
                     <ul class="nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link text-light">
