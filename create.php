@@ -10,15 +10,14 @@
 </head>
 
 <body>
-    <div class="container-fulid">
-        <div class="row">
+<div class="container-fulid">
+        <div class="header">
             <div class="col-12">
                 <nav class="navbar navbar-dark bg-dark">
-                    <a href="index.php" class="navbar-brand">Todo</a>
+                    <a href="index.php" class="navbar-brand">Todo_teamB</a>
                 </nav>
             </div>
         </div>
-
         <div class="row mt-4 px-4">
             <div class="col-12">
                 <form action="store.php" method="post">
@@ -31,14 +30,12 @@
                         <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"></textarea>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary">送信</button>
+                    <button type="submit" class="my-parts">POST</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
