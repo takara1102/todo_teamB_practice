@@ -42,6 +42,5 @@ class Model
         $stmt = $this->db_manager->dbh->prepare('DELETE FROM ' . $this->table . ' WHERE id = ?');
 
         return $stmt->execute($data);
-
     }
 }
