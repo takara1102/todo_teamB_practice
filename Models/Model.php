@@ -23,7 +23,7 @@ class Model
         // 実行するSQL
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM ' . $this->table . ' ORDER BY created DESC');
 
-      
+
     }
 
     // idを指定してデータを1件取得するメソッド
@@ -36,11 +36,12 @@ class Model
     }
 
 
-    public function delete()
+    public function delete($data)
     {
         // 実行するSQL
         $stmt = $this->db_manager->dbh->prepare('DELETE FROM ' . $this->table . ' WHERE id = ?');
 
-        
+        return $stmt->execute($data);
+
     }
 }
